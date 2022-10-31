@@ -39,8 +39,11 @@ public class MyPongPanel extends JPanel {
             b.x += b.dx;
             b.y += b.dy;
 
+            one.y = b.y;
+            two.y = b.y;
+
             // hit vertical wall 
-            if( b.x+b.diameter >= getWidth() || b.x < 0)
+            if( b.x+b.diameter >= getWidth()-40 || b.x < 50)
             {
                 b.dx = -1*b.dx;
             }
